@@ -7,27 +7,31 @@
     </head>
 
     <body>
-      <a href="/search">Search</a>
-      <a href="/myBlog">My Blog</a>
-      <a href="/createPosts">Create New Post</a>
-      <a href="/logout">Logout</a>
+        <nav>
+            <ul>
+                <li><a href="/search">Search</a></li>
+                <li><a href="/myBlog">My Blog</a></li>
+                <li><a href="/createPosts">Create New Post</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </nav>
         <h1>
-          Journal Home
+            Journal Home
         </h1>
         {% if error %}
         <h2 style="color: red;">Error: {{error}}</h2>
         {% endif %}
         <h3>
             <form action="/search" method="POST">
-              <label for="options">Search By:</label>
-              <select name = "options" id = "options">
-                <option value ="author">Author</option>
-                <option value ="title">Title</option>
-                <option value ="content">Content</option>
-              </select>
-              <br>
-                <input type="text" name="query">
-                <input type = "submit" name = "search" value = "Search">
+                <label for="options">Search By:</label>
+                <select name = "options" id = "options">
+                    <option value ="author">Author</option>
+                    <option value ="title">Title</option>
+                    <option value ="content">Content</option>
+                </select>
+                <br>
+                    <input type="text" name="query">
+                    <input type = "submit" name = "search" value = "Search">
             </form>
         </h3>
         <h2>Most Recent Posts</h2>
