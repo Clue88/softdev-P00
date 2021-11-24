@@ -11,34 +11,35 @@
     </head>
 
     <body>
-      <nav>
-        <ul>
-            <li><a href="/myBlog">My Blog</a></li>
-            <li><a href="/createPosts">Create New Post</a></li>
-            <li><a href="/logout">Logout</a></li>
-        </ul>
-    </nav>
-      {% if found %}
-      <h1>
-        {{title}}
-      </h1>
-      <p>By {{ displayName }} @{{author}}</p>
-      <small>
-        {% if date != edit %}
-        {{date}} (Edited: {{edit}})
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/myBlog">My Blog</a></li>
+                <li><a href="/createPosts">Create New Post</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </nav>
+        {% if found %}
+        <h1>
+            {{title}}
+        </h1>
+        <p>By {{ displayName }} @{{author}}</p>
+        <small>
+            {% if date != edit %}
+            {{date}} (Edited: {{edit}})
+            {% else %}
+            {{date}}
+            {% endif %}
+        </small>
+        <br>
+        <br>
+        <p>{{content}}</p>
         {% else %}
-        {{date}}
+        {% if error %}
+        <h2 style="color: red;">Error: {{error}}</h2>
+        {% else %}
+            <p>Not found</p>
         {% endif %}
-      </small>
-      <br>
-      <br>
-      <p>{{content}}</p>
-      {% else %}
-      {% if error %}
-      <h2 style="color: red;">Error: {{error}}</h2>
-      {% else %}
-        <p>Not found</p>
-      {% endif %}
-      {% endif %}
+        {% endif %}
     </body>
 </html>

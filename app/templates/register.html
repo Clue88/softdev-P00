@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <title> SIGN UP PAGE </title>
-    <link href ="../static/css/styles.css" rel ="stylesheet" type ="text/css">
-  </head>
+    <head>
+        <title> SIGN UP PAGE </title>
+        <link href ="../static/css/styles.css" rel ="stylesheet" type ="text/css">
+    </head>
 
-  <body>
-    <h1>
-      Signup - Journal Square
-    </h1>
+    <body>
+        <h1>
+        Signup - Journal Square
+        </h1>
 
-    {% if error %}
-    <h2 style="color: red;">Error: {{error}}</h2>
-    {% endif %}
-    <h3>
-      Create your account for Journal Square, a newfangled blog, below!
-    </h3>
-    <form action="/signup" method="POST">
-      Display Name:
-      <input type="text" name="displayName">
-      <br>
-      Username:
-      <input type="text" name="username">
-      <br>
-      Password:
-      <input type="password" name="password">
-      <br>
-      <input type="submit" name="sub1" value="Register">
-      <br>
-      <a href="/login">Login</a>
-    </form>
-    <br>
-  </body>
+        {% if error %}
+        <h2 style="color: red;">Error: {{error}}</h2>
+        {% endif %}
+        <h3>
+        Create your account for Journal Square, a newfangled blog, below!
+        </h3>
+        <form action="/signup" method="POST">
+        Display Name:
+        <input type="text" name="displayName">
+        <br>
+        Username:
+        <input type="text" name="username">
+        <br>
+        Password:
+        <input type="password" name="password">
+        <br>
+        <input type="submit" name="sub1" value="Register">
+        <br>
+        <a href="/login">Login</a>
+        </form>
+        <br>
+    </body>
 
 </html>
