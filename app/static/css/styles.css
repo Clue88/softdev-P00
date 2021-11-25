@@ -1,12 +1,13 @@
 body {
-    background-color: #fffc9c;
+    background-color: #ade8f4;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
+    color: #023e8a;
 }
 
 nav {
-    background-color: #ac9cff;
+    background-color: #0077b6;
 }
 
 ul {
@@ -29,5 +30,9 @@ li a {
 }
 
 li a:hover {
-    background-color: #4c437a;
+    background-color: #03045e;
+}
+
+h1 {
+    color: #023e8a;
 }
