@@ -5,6 +5,7 @@
 - Andy Lin: backend
 - Shadman Rakib: backend and database
 - Raymond Yeung: frontend and website
+- Christopher Liu and Ivan Mijacika: frontend styling (CSS)
 
 ## How to use
 
